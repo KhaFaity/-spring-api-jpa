@@ -18,7 +18,7 @@ public class ChungNhanRestController {
 	@Autowired
 	private ChungNhanService chungNhanService;
 	
-	@GetMapping("/chungnhans/ma-ho-nguyen")
+	@GetMapping("/chungnhan/ma-ho-nguyen")
 	public List<String> maMBVoiNVHoNguyen(){
 		List<String> ls = chungNhanService.findMMBtenHo("Nguyễn");
 		
